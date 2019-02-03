@@ -39,11 +39,6 @@ header nav a button {
     cursor: pointer;
 }
 
-header nav a button:hover {
-    background: rgb(64, 124, 219);
-    border: 1px solid rgb(75, 112, 173);
-}
-
 /*********************************************************************
 * =main
 *********************************************************************/
@@ -85,12 +80,19 @@ header nav a button:hover {
 
 .main .buttons button {
     background-color: #f2f2f2;
-    border: none;
-    padding: 11px 17px;
+    border: 1px solid #f2f2f2;
+    padding: 11px 16px;
     font-weight: bold;
     font-size: 13px;
     color: #757575;
     border-radius: 3px;
     margin: 4px;
     cursor: pointer;
+}
+
+.main .buttons button:hover {
+    border: 1px solid rgba(0,0,0,0.16);
+    color: rgba(0,0,0,0.87);
+    box-shadow: 0 1px 1px 0   rgba(0,0,0,0.16);
+    z-index: 3;
 }
